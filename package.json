@@ -1,0 +1,24 @@
+{
+  "name": "DundasProxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "ts-node": "node -r ./bin/ts-node.js",
+    "ts-node:inspect": "node --inspect=9999 --inspect -r ./bin/ts-node.js",
+    "ts-node:inspect:brk": "node --inspect=9999 --inspect-brk -r ./bin/ts-node.js",
+    "start": "npm run ts-node src/start.ts",
+    "start:dev": "npm run ts-node:inspect src/start.ts",
+    "start:dev:brk": "npm run ts-node:inspect:brk src/start.ts"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^10.9.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http-proxy": "^1.17.0",
+    "request": "^2.88.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  }
+}
